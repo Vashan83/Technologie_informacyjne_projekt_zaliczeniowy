@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250,146,146);
+    line-height: 1.6;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background-color: #50b3a2;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 70px;
+    border-bottom: rgb(163,73,164) 3px solid;
+}
+
+
+header img {
+    float: left;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px
+}
+
+header h1{
+    float: left;
+    padding-left:20px;
+    padding-top: 20px;
+}
+
+header nav{
+    float: right;
+    padding-top: 30px
+}
+main .prod_img{
+    max-width: 50%;
+    padding: 20px
+}
+
+main .prod_info {
+    float: right;
+    background-color: greenyellow;
+    color:black;
+    border-radius: 10px;
+    margin:20px;
+    width: 40%;
+    height: 35vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+main .prod_info h2{
+    text-align: center;
+}
+
+main .prod_info p {
+    text-align: center;
+}
+
+main .prod_info button{
+    height: 10%;
+    width: 70%;
+
+}
+
+main .posts{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .posts article{
+    flex: 1 1 30%;
+    margin: 20px 10px;
+    background: lightgray;
+    padding: 10px;
+}
+
+main .posts article img{
+    max-width: 100%;
+    max-height:max-content;
+}
+
+main .posts article h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .posts article .btn{
+display: block;
+background: #50b3a2;
+color: white;
+padding: 10px;
+text-decoration: none;
+text-align: center;
+}
+
+footer{
+    background: #5c5b5b;
+    color: white;
+    text-align: center;
+    padding: 20px 0
+}
+
+footer .socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li{
+    margin: 0 10px;
+}
+
+footer .socials a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials a:hover{
+    text-decoration: underline;
+}
+
+form{
+    background-color: lightgray;
+    padding: 20px
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+form button{
+    display: block;
+    width: 100%;
+    background-color: #50b3a2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+form button:hover{
+    background: gray;
+}
