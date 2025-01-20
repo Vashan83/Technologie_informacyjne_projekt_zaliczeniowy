@@ -16,12 +16,12 @@ body{
 }
 
 header{
-    background-color: #50b3a2;
+    background-color: rgb(72, 76, 173);
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
     min-height: 70px;
-    border-bottom: rgb(163,73,164) 3px solid;
+    border-bottom: rgb(255,245,5) 3px solid;
 }
 
 
@@ -59,8 +59,8 @@ main .prod_img{
 
 main .prod_info {
     float: right;
-    background-color: greenyellow;
-    color:black;
+    background-color: rgb(165,71,165);
+    color:white;
     border-radius: 10px;
     margin:20px;
     width: 40%;
@@ -95,9 +95,18 @@ main .posts{
 main .posts article{
     flex: 1 1 30%;
     margin: 20px 10px;
-    background: lightgray;
+    background: rgb(215,231,221);
     padding: 10px;
 }
+
+main .posts article p{
+    padding-top:0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+    text-align: center;
+    }
 
 main .posts article img{
     max-width: 100%;
@@ -111,7 +120,7 @@ main .posts article h3{
 
 main .posts article .btn{
 display: block;
-background: #50b3a2;
+background: rgb(72, 76, 173);
 color: white;
 padding: 10px;
 text-decoration: none;
@@ -119,10 +128,14 @@ text-align: center;
 }
 
 footer{
-    background: #5c5b5b;
+    background: rgb(129, 85, 84);
     color: white;
     text-align: center;
-    padding: 20px 0
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 footer .socials{
