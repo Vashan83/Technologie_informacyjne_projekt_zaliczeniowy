@@ -50,8 +50,13 @@ header h1{
 
 header nav{
     float: right;
-    padding-top: 30px
 }
+
+#kosz{
+    padding-top: 20px
+}
+
+
 main .prod_img{
     max-width: 50%;
     padding: 20px
@@ -187,4 +192,18 @@ form button{
 
 form button:hover{
     background: gray;
+}
+
+/* KOSZYK */
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    max-width: 200px;
+}
+.cart {
+    background-color: #ccc;
+    border: 1px solid green;
+    padding: 10px;
+    margin: 10px;
 }

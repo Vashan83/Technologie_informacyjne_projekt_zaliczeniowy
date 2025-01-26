@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="images/logo.png" type="image/png">
-    <title>Occult octopus</title>
+    <title>Koszyk occult octopus</title>
     <link rel="stylesheet" type = "text/css" href="style_3.css">
     <script src="script.js"></script>
 </head>
@@ -23,23 +23,25 @@
     </header>
     <main>
         <div class="container">
-            <div class="posts">
+            <div class="product">
                 <article>
-                    <img src="https://www.psychodelicroom.pl/wp-content/uploads/2023/07/kadzidlo-z-polskich-ziol-smuzka-ziolowa-na-niebieskim-podstawku-obok-naturalne-kamienie.webp" alt="zdjęcie kadzidło ziołowe">
-                    <h3>Kadzidło ziołowe</h3>
-                    <a href="kadzidlo_3.html" class="btn">Zobacz produkt</a>
+                    <h2>Kadzidło</h2>
+                    <p>Cena: 20 zł</p>
+                    <button class="add-to-cart" data-name="Kadzidło ziołowe" data-price="20">Dodaj do koszyka</button>
                 </article>
                 <article>
-                    <img src="https://dabrigh.com/cdn/shop/products/OriginalP1Shopify_720x.jpg?v=1602964175" alt="zdjęcie karty tarot">
-                    <h3>Karty tarot</h3>
-                    <a href="karty.html" class="btn">Zobacz produkt</a>
-                </article>
-                <article>
-                    <img src="https://m.media-amazon.com/images/I/61tahOcp+XL._AC_UF894,1000_QL80_.jpg" alt="zdjecie kryształowa kula">
-                    <h3>Kryształowa kula</h3>
-                    <a href="kula.html" class="btn">Zobacz produkt</a>
+                    <h2>Kula</h2>
+                    <p>Cena: 35 zł</p>
+                    <button class="add-to-cart" data-name="Produkt B" data-price="35">Dodaj do koszyka</button>
                 </article>
             </div>
+        </div>
+        
+        
+        <div class="cart">
+            <h3>Koszyk</h3>
+            <ul id="cartItems"></ul>
+            <p>Łączna wartość: <span id="totalPrice">0</span> zł</p>
         </div>
     </main>
     <footer>

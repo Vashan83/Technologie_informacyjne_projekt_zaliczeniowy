@@ -5,6 +5,7 @@
     <link rel="icon" href="images/logo.png" type="image/png">
     <title>Kryształowa kula</title>
     <link rel="stylesheet" type = "text/css" href="style_3.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,8 +14,9 @@
             <h1>Occult Octopus</h1>
             <nav>
                 <ul>
-                    <li><a href="about.html">Profil</a></li>
-                    <li><a href="contact.html">Zaloguj Się</a></li>
+                    <li id="kosz"><a href="koszyk.html"><img style="width: 46px;height: auto;" src="images/shopping_cart.png" alt="koszyk"></a></li>
+                    <li style="padding-top: 30px;"><a href="about.html">Profil</a></li>
+                    <li style="padding-top: 30px;"><a href="uzytkownik.html">Zaloguj Się</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,17 +27,18 @@
             <div class="prod_info">
                 <h2>Kryształowa kula</h2>
                 <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsum </p>
-                <button>Dodaj do koszyka</button>
+                <button class="add-to-cart" data-name="Produkt A" data-price="20">Dodaj do koszyka</button>
             </div>
         </div>
     </main>
     <footer>
         <div class="container">
-            <p>&copy; 2023 Blog Podróżniczy Jana Kowalskiego</p>
+            <p>&copy; Sklep okultystyczny O-G 2025</p>
             <ul class="socials">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="https://www.facebook.com/groups/OccultPractices/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/nesegodnyai/">Instagram</a></li>
+                <li><a href="https://x.com/0ccultbot">Twitter</a></li>
+                <li><a href = "kontakt.html">Kontakt</a></li>
             </ul>
         </div>
     </footer>

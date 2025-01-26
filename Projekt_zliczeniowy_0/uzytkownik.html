@@ -14,18 +14,21 @@
             <h1>Occult Octopus</h1>
             <nav>
                 <ul>
-                    <li><a href="about.html">Profil</a></li>
-                    <li><a href="contact.html">Zaloguj Się</a></li>
+                    <li id="kosz"><a href="koszyk.html"><img style="width: 46px;height: auto;" src="images/shopping_cart.png" alt="koszyk"></a></li>
+                    <li style="padding-top: 30px;"><a href="about.html">Profil</a></li>
+                    <li style="padding-top: 30px;"><a href="uzytkownik.html">Zaloguj Się</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <form id="dataForm">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" value="John" name="name"><br><br>
-                <button type="button" onclick="convertToJson()"> Wyślij<button>
+            <form>
+                <label for="fname">login</label><br>
+                <input type="text" id="fname" value="login" name="name"><br><br>
+                <label for="fname">haslo</label><br>
+                <input type="text" id="fname" value="haslo" name="name"><br><br>
+                <input type="submit" value="Zaloguj">
             </form>
         </div>
     </main>
@@ -33,12 +36,12 @@
         <div class="container">
             <p>&copy; Sklep okultystyczny O-G 2025</p>
             <ul class="socials">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
+                <li><a href="https://www.facebook.com/groups/OccultPractices/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/nesegodnyai/">Instagram</a></li>
+                <li><a href="https://x.com/0ccultbot">Twitter</a></li>
+                <li><a href = "kontakt.html">Kontakt</a></li>
             </ul>
         </div>
     </footer>
-    <div id="jsonOutput"></div>
 </body>
 </html>
