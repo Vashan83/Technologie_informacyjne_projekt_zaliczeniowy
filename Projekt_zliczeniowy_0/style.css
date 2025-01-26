@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250,146,146);
+    line-height: 1.6;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    background-color: rgb(72, 76, 173);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 70px;
+    border-bottom: rgb(255,245,5) 3px solid;
+}
+
+
+header img {
+    float: left;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px
+}
+
+header h1{
+    float: left;
+    padding-left:20px;
+    padding-top: 20px;
+}
+
+header nav{
+    float: right;
+}
+
+#kosz{
+    padding-top: 20px
+}
+
+/* main {
+    display:flex;
+    justify-content: center;
+} */
+
+a{
+    text-decoration: none;
+}
+
+main .prod_img{
+    max-width: 50%;
+    padding: 20px;
+    
+}
+
+main .prod_info {
+    float: right;
+    background-color: rgb(165,71,165);
+    color:white;
+    border-radius: 10px;
+    margin:20px;
+    width: 40%;
+    height: 35vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .prod_info h2{
+    text-align: center;
+}
+
+main .prod_info .opis {
+    text-align: center;
+    margin:  0 20px 0 20px;
+    padding:5px 12px 5px 12px;
+    display:block;
+    background-color: rgba(187, 59, 112, 0.767);
+    border-radius: 5px;
+    word-wrap: break-word;
+    
+}
+
+main .prod_info .sklad {
+    font-size: smaller;
+    margin:  0 20px 0 20px;
+}
+
+main .prod_info button{
+    height: 10%;
+    width: 70%;
+    border:none;
+    display:inline-block;
+    background-color: rgb(215,231,221);
+
+}
+
+main .posts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main .posts article{
+    flex: 1 1 30%;
+    margin: 20px 10px;
+    background: rgb(215,231,221);
+    padding: 10px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+main .posts article p{
+    padding-top:0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+    text-align: center;
+    }
+
+main .posts article img{
+    max-width: 100%;
+    max-height:max-content;
+}
+
+main .posts article h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .posts article .btn{
+    display: block;
+    background: rgb(72, 76, 173);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#productCart{
+    color:white;
+    width: 15vw;
+    padding: 5;
+    font-size: large;
+}
+
+#nierozstawionyTarot article{
+    flex: 1 1 30%;
+    margin: 5px;
+    background-color: rgb(250,146,146);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+#rozstawionyTarot article{
+    flex: 1 1 30%;
+    margin: 5px;
+    background-color: rgb(250,146,146);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+#przyciskTarot {
+    background-color: rgba(187, 59, 112, 0.767);
+    color: white;
+    width:30%;
+    height: 35px;
+    border:none;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+
+footer{
+    background: rgb(129, 85, 84);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+footer .socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li{
+    margin: 0 10px;
+}
+
+footer .socials a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials a:hover{
+    text-decoration: underline;
+}
+
+form{
+    background-color: rgb(215,231,221);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+
+form select{
+    width: 15%;
+}
+
+.productCart {
+    padding: 10px 0 10px 0;
+    width: 60%;
+    background-color: rgba(187, 59, 112, 0.767);;
+}
+
+
+
+/*                  ZALOGUJ                     */
+
+#login {
+    padding:10px;
+    border-radius: 10px;
+    color:black;
+    
+}
+
+#login input {
+    border: 1px solid black;
+}
+
+#loginButton {
+    background-color: rgba(187, 59, 112, 0.767);
+    color:white;
+    border: 1px solid rgba(134, 40, 80, 0.767);
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    width:100%;
+}
+
+#login label {
+    text-align: center;
+}
+
+.valid {
+    color: rgb(250,146,146);
+}
+.invalid {
+    color: rgb(207, 0, 0);
+}
+
+/*                  KOSZYK                   */
+.product {
+    padding: 1px;
+    margin: 1px;   
+}
+
+.product article{
+    text-align: center;
+    border: 7px solid rgb(165,71,165);
+    width: 300px;
+}
+
+.product img{
+    height: 200px; 
+    
+}
+
+.product button{
+    height: 10%;
+    width: 70%;
+    border:none;
+    display:inline-block;
+    background-color: rgb(215,231,221);
+    font-size: large;
+    font-weight: bold;
+    color: rgb(209, 54, 54);
+}
+
+.cart {
+    background-color: rgb(215,231,221);
+    border: 2px solid rgb(36, 88, 36);
+    padding: 10px;
+    margin: 10px;
+}
+
+.cart button{
+    text-align: right;
+    color: rgb(215,231,221);
+    background-color: rgb(36, 88, 36);
+    font-size: larger;
+}
+
+.cart li{
+    list-style-type: none;
+}
+
+.cart li button{
+    text-align: right;
+    color: black;
+    background-color: rgb(215,231,221);
+    border: none;
+    font-weight: bold;
+}
+
+
+#wysylka{
+    border: 2px solid rgb(36, 88, 36);
+    display: none;
+    background-color: rgb(215,231,221);
+}
+
+#wysylka input{
+    height:20px;
+}
+
+#wysylka button{
+    width: 100%;
+    background-color: rgb(36, 88, 36);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+}

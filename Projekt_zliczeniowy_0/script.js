@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cartItemsList = document.getElementById("cartItems");
     const totalPriceSpan = document.getElementById("totalPrice");
+
+    const passwordInput = document.getElementById("password");
+    const passwordForm = document.getElementById("login");
+
+    const lengthMsg = document.getElementById("lengthMsg");
+    const numberMsg = document.getElementById("numberMsg");
+    const specialCharMsg = document.getElementById("specialCharMsg");
     
     // Koszyk – tablica obiektów
     let cart = [];
@@ -15,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0;
     cart.forEach((item, index) => {
         const li = document.createElement("li");
-        li.textContent = `${item.name} - ${item.price} zł (Ilość: ${item.quantity})`;
+        li.textContent = `${item.name} - ${item.price} zł (Ilość: ${item.quantity})    `;
         
         // Przycisk do usunięcia produktu
         const removeBtn = document.createElement("button");
-        removeBtn.textContent = "Usuń";
+        removeBtn.textContent = "—";
         removeBtn.addEventListener("click", () => {
         removeFromCart(index);
         });
@@ -71,6 +78,41 @@ document.addEventListener("DOMContentLoaded", () => {
         addToCart(name, price);
     });
     });
+
+    // Wyrażenia regularne
+    const hasNumber = /\d/;
+    const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/;
+
+    passwordInput.addEventListener("input", () => {
+        const passwordValue = passwordInput.value;
+
+        // Sprawdzanie długości
+        if (passwordValue.length >= 8) {
+            lengthMsg.classList.add("valid");
+            lengthMsg.classList.remove("invalid");
+        } else {
+            lengthMsg.classList.add("invalid");
+            lengthMsg.classList.remove("valid");
+        }
+
+        // Sprawdzanie cyfry
+        if (hasNumber.test(passwordValue)) {
+            numberMsg.classList.add("valid");
+            numberMsg.classList.remove("invalid");
+        } else {
+            numberMsg.classList.add("invalid");
+            numberMsg.classList.remove("valid");
+        }
+
+        // Sprawdzanie znaku specjalnego
+        if (hasSpecialChar.test(passwordValue)) {
+            specialCharMsg.classList.add("valid");
+            specialCharMsg.classList.remove("invalid");
+        } else {
+            specialCharMsg.classList.add("invalid");
+            specialCharMsg.classList.remove("valid");
+        }
+    });
 });
 
 function zlozonoZamowienie() {
@@ -82,10 +124,11 @@ function wyswietlWysylke() {
 }
 
 function wyswietlProfil() {
-    document.getElementById("profilPrzycisk").style.display = "block";
+    document.getElementById("profilPrzycisk").style.display = "inline";
+    alert("Zalogowano się");
 }
 
-var imagesArray = ["images/Tarot/the_devil.png", "images/Tarot/the_fool.png", "images/Tarot/the_empress.png", "images/Tarot/temperance.png", "images/Tarot/the_star.png", "images/Tarot/wheel_of_fortune.png", "images/Tarot/death"];
+var imagesArray = ["images/Tarot/the_devil.png", "images/Tarot/the_fool.png", "images/Tarot/the_empress.png", "images/Tarot/temperance.png", "images/Tarot/the_star.png", "images/Tarot/wheel_of_fortune.png", "images/Tarot/death.png"];
 function rozstawTarota(){
 
     //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
@@ -100,4 +143,5 @@ function rozstawTarota(){
     document.getElementById("nierozstawionyTarot").style.display = "none";
     document.getElementById("rozstawionyTarot").style.display = "block";
 }
+
 

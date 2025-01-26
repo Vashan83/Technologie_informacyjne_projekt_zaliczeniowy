@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <link rel="icon" href="images/logo.png" type="image/png">
     <title>Occult octopus</title>
-    <link rel="stylesheet" type = "text/css" href="style_3.css">
+    <link rel="stylesheet" type = "text/css" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href = "index_3.html"><img style="width:70px;height:auto;" src="images/logo.png" alt="Strona główna serwisu"></a>
+            <a href = "index.html"><img style="width:70px;height:auto;" src="images/logo.png" alt="Strona główna serwisu"></a>
             <h1>Occult Octopus</h1>
             <nav>
                 <ul>
                     <li id="kosz"><a href="koszyk.html"><img style="width: 46px;height: auto;" src="images/shopping_cart.png" alt="koszyk"></a></li>
-                    <li style="padding-top: 30px;"><a href="profil.html" id="profilPrzycisk" style="Display:none;">Profil</a></li>
+                    <li style="padding-top: 30px;"><a href="wrozba.html" id="profilPrzycisk" style="Display:none;">Wróżba</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
-            <form>
-                <label for="fname">login</label><br>
-                <input type="text" id="fname" value="login" name="name"><br><br>
-                <label for="fname">haslo</label><br>
-                <input type="text" id="fname" value="haslo" name="name"><br><br>
-                <input onclick="wyswietlProfil()" type="submit" value="Zaloguj">
+        <br>
+        <div class="container" style="width:40%">
+            <form id = "login">
+                <label for="fname">Podaj dane:</label>
+                <input type="text" id="fname" placeholder="login">
+                <input type="password" id="password" placeholder="haslo">
             </form>
+            <br>
+            <input onclick="wyswietlProfil()" id="loginButton" type="submit" value="Zaloguj" > 
+            <div>
+                <p id="lengthMsg" class="invalid">Min. 8 znaków</p>
+                <p id="numberMsg" class="invalid">Min. 1 cyfra</p>
+                <p id="specialCharMsg" class="invalid">Min. 1 znak specjalny ([!@#$%^&*(),.?":{}|<>])</p>
+            </div>
+            
         </div>
     </main>
     <footer>

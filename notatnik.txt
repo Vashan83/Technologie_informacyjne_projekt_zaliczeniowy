@@ -1,9 +1,0 @@
-Strony:
-1. strona głównę 
-    - zakładka o nas
-    - miejsce na logowanie
-2. Rejestracja
-3. Profil użytkownika
-    - zakładka ulubione
-4. Strona produktu 
-5. Strona produktu 
