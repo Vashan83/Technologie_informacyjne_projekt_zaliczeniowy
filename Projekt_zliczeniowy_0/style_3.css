@@ -56,10 +56,15 @@ header nav{
     padding-top: 20px
 }
 
+/* main {
+    display:flex;
+    justify-content: center;
+} */
 
 main .prod_img{
     max-width: 50%;
-    padding: 20px
+    padding: 20px;
+    
 }
 
 main .prod_info {
@@ -83,11 +88,15 @@ main .prod_info h2{
 
 main .prod_info p {
     text-align: center;
+    padding:  0 10px 0 10px;
 }
 
 main .prod_info button{
     height: 10%;
     width: 70%;
+    border:none;
+    display:inline-block;
+    background-color: beige;
 
 }
 
@@ -130,6 +139,12 @@ color: white;
 padding: 10px;
 text-decoration: none;
 text-align: center;
+}
+
+main #przyciskTarot {
+    width:40%;
+    border:none;
+    justify-content: center;
 }
 
 footer{
@@ -182,7 +197,7 @@ form input, form textarea{
 form button{
     display: block;
     width: 100%;
-    background-color: #50b3a2;
+    background-color: rgb(129, 85, 84);
     color: white;
     border: none;
     cursor: pointer;
@@ -206,4 +221,12 @@ form button:hover{
     border: 1px solid green;
     padding: 10px;
     margin: 10px;
+}
+
+#wysylka{
+    display: none;
+}
+
+#wysylka input{
+    height:20px;
 }

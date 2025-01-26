@@ -15,30 +15,20 @@
             <nav>
                 <ul>
                     <li id="kosz"><a href="koszyk.html"><img style="width: 46px;height: auto;" src="images/shopping_cart.png" alt="koszyk"></a></li>
-                    <li style="padding-top: 30px;"><a href="zaloguj.html">Zaloguj Się</a></li>
+                    <li style="padding-top: 30px;"><a href="profil.html" id="profilPrzycisk" style="Display:none;">Profil</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="posts">
-                <article>
-                    <img src="images/kadzidlo_3.png" alt="zdjęcie kadzidło ziołowe">
-                    <h3>Kadzidło ziołowe</h3>
-                    <a href="kadzidlo_3.html" class="btn">Zobacz produkt</a>
-                </article>
-                <article>
-                    <img src="images/Tarot/karty.png" alt="zdjęcie karty tarot">
-                    <h3>Karty tarot</h3>
-                    <a href="karty.html" class="btn">Zobacz produkt</a>
-                </article>
-                <article>
-                    <img src="images/kula.png" alt="zdjecie kryształowa kula">
-                    <h3>Kryształowa kula</h3>
-                    <a href="kula.html" class="btn">Zobacz produkt</a>
-                </article>
-            </div>
+            <form>
+                <label for="fname">login</label><br>
+                <input type="text" id="fname" value="login" name="name"><br><br>
+                <label for="fname">haslo</label><br>
+                <input type="text" id="fname" value="haslo" name="name"><br><br>
+                <input onclick="wyswietlProfil()" type="submit" value="Zaloguj">
+            </form>
         </div>
     </main>
     <footer>
@@ -52,6 +42,5 @@
             </ul>
         </div>
     </footer>
-    
 </body>
 </html>

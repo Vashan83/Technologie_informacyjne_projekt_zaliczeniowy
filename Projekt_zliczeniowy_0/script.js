@@ -72,3 +72,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     });
 });
+
+function zlozonoZamowienie() {
+    alert("Dziękujemy za złożenie zamówienia!");
+}
+
+function wyswietlWysylke() {
+    document.getElementById("wysylka").style.display = "block";
+}
+
+function wyswietlProfil() {
+    document.getElementById("profilPrzycisk").style.display = "block";
+}
+
+var imagesArray = ["images/Tarot/the_devil.png", "images/Tarot/the_fool.png", "images/Tarot/the_empress.png", "images/Tarot/temperance.png", "images/Tarot/the_star.png", "images/Tarot/wheel_of_fortune.png", "images/Tarot/death"];
+function rozstawTarota(){
+
+    //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
+    var num1 = Math.floor(Math.random() * 7);
+    var num2 = Math.floor(Math.random() * 7);
+    var num3 = Math.floor(Math.random() * 7);
+    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+    document.tarot1.src = imagesArray[num1];
+    document.tarot2.src = imagesArray[num2];
+    document.tarot3.src = imagesArray[num3];
+
+    document.getElementById("nierozstawionyTarot").style.display = "none";
+    document.getElementById("rozstawionyTarot").style.display = "block";
+}
+

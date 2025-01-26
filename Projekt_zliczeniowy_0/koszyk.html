@@ -15,8 +15,8 @@
             <nav>
                 <ul>
                     <li id="kosz"><a href="koszyk.html"><img style="width: 46px;height: auto;" src="images/shopping_cart.png" alt="koszyk"></a></li>
-                    <li style="padding-top: 30px;"><a href="about.html">Profil</a></li>
-                    <li style="padding-top: 30px;"><a href="uzytkownik.html">Zaloguj Się</a></li>
+                    <li style="padding-top: 30px;"><a href="profil.html">Profil</a></li>
+                    <li style="padding-top: 30px;"><a href="zaloguj.html">Zaloguj Się</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,14 +34,24 @@
                     <p>Cena: 35 zł</p>
                     <button class="add-to-cart" data-name="Produkt B" data-price="35">Dodaj do koszyka</button>
                 </article>
+                
             </div>
         </div>
-        
-        
         <div class="cart">
             <h3>Koszyk</h3>
             <ul id="cartItems"></ul>
             <p>Łączna wartość: <span id="totalPrice">0</span> zł</p>
+            <button onclick="wyswietlWysylke()">Kupuj</button>
+        </div>
+        <div class="container">
+                <form id="wysylka">
+                    <h2>Dane wysyłki</h2>
+                    <input placeholder="imie i nazwisko"></input>
+                    <input type="email" placeholder="email"></input>
+                    <input placeholder="adres"></input>
+                    <input placeholder="kod pocztowy"></input>
+                    <button onclick="zlozonoZamowienie()">Złóż zamówienie</button>
+                </form>
         </div>
     </main>
     <footer>
